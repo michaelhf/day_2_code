@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head><title>BUS36110: Application Development</title>
+  <link href='http://fonts.googleapis.com/css?family=Slabo+27px|Roboto:400,700' rel='stylesheet' type='text/css'>
   <style>
     *{
-      font-family: "Consolas";
+      font-family: 'Roboto', sans-serif;
+      font-size: small;
     }
     h1{
       color: darkgray;
@@ -13,93 +15,115 @@
     .red {
       color: red;
     }
-    .left{
-      position: relative;
-      vertical-align: left;
-    }
-    .right{
-      position: relative;
-      vertical-align: right;
-    }
-    .center{
-      position: relative;
-      vertical-align: center;
-    }
 
-    h2{
+      .column{
+        float:left;
+        width:30%;
+        padding:5px;
 
-      background-color: maroon;
-      color: white;
-      text-transform: uppercase;
-      padding-left: 10px;
+      }
 
-    }
-    ul{
-      list-style-type: none;
-      padding-left: 10px;
-    }
+      }
+      .container{
+        width:900px;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
-    .number{
-      color: maroon;
-    }
+      h2{
 
-    .card {
-      border: 2px solid maroon;
-      border-radius:25px;
-      margin-bottom: 10px;
-      -webkit-box-shadow: 10px 10px 45px 5px rgba(0,0,0,0.68);
-      -moz-box-shadow: 10px 10px 45px 5px rgba(0,0,0,0.68);
-      box-shadow: 10px 10px 45px 5px rgba(0,0,0,0.68);
-    }
+        background-color: maroon;
+        color: white;
+        text-transform: uppercase;
+        padding-left: 10px;
 
-  </style>
+      }
+      ul{
+        list-style-type: none;
+        padding-left: 10px;
+      }
 
-</head>
-<body>
-  <img src="booth_logo.jpg" >
-  <h1> <span class="number">BUS36110:</span> Application Development Spring 2015</h1>
-  <div class="card left">
-    <h2>Instructors</h2>
-    <ul>
-     <li> Raghu Betina</li>
-     <li> Ben Block</li>
-     <li> Ryan Francis</li>
-     <li> Wade Novak</li>
-     <li> Leonardo Gaboardi</li>
-   </ul>
- </div>
- <div class="card center">
-   <h2>Students</h2>
-   <ul>
-     <li> Emilia Pollich</li>
-     <li> Judson Kunde</li>
-     <li> Kelsie Wolff</li>
-     <li> Howell Wilderman</li>
-     <li> Pete Bogisich II</li>
-     <li> Kayley Jakubowski</li>
-     <li> Avis Cole</li>
-     <li> Vance Huels</li>
-     <li> Lance Lowe</li>
-     <li> Maya Wyman</li>
-     <li> Will Herzog Jr.</li>
-     <li> Terrence Reynolds</li>
-     <li> Sincere Kunde</li>
-     <li> Terrell Pouros</li>
-     <li> Abdullah Smith</li>
-     <li> Adolfo Kihn</li>
-     <li> Leanne Powlowski</li>
-     <li> Julian Hintz</li>
-     <li> Francesco Reichert</li>
-     <li> Dixie Bradtke</li>
-   </ul>
- </div>
- <div class="card right">
-   <h2>Resources</h2>
-   <ul>
-    <li><a href="https://github.com/boothappdev-s15"> Course GitHub page</a></li>
-    <li><a href="http://ask.firstdraft.com/c/boothappdev-spring-2015">Course forum</a></li>
-    <li><a href="http://boothappdev-s15.github.io/syllabus/">Course syllabus</a></li>
-  </ul>
+      .number{
+        color: maroon;
+      }
+
+      .card {
+        border: 1px solid maroon;
+        border-radius:20px;
+        margin-bottom: 10px;
+        -webkit-box-shadow: 10px 10px 45px 5px rgba(0,0,0,0.68);
+        -moz-box-shadow: 10px 10px 45px 5px rgba(0,0,0,0.68);
+        box-shadow: 10px 10px 45px 5px rgba(0,0,0,0.68);
+      }
+      .avatar{
+        border-radius: 50%;
+        float:left;
+      }
+      .clearfix {
+        clear: both;
+      }
+      .name {
+        float: left;
+        margin-top: 15px;
+        margin-left: 10px;
+      }
+
+    </style>
+
+  </head>
+  <body>    <div class="container">
+
+    <img src="booth_logo.jpg" >
+    <h1> <span class="number">BUS36110:</span> Application Development Spring 2015</h1>
+    <div class="column">
+    <div class="card">
+      <h2>Instructors</h2>
+      <ul>
+       <li><img class="avatar" src="https://graph.facebook.com/michaelfrankel/picture"> <div class="name">Raghu Betina</div><div class="clearfix"/></li>
+       <li> <img class="avatar" src="https://graph.facebook.com/615778/picture"><div class="name">Ben Block</div><div class="clearfix"/></li>
+       <li> <img class="avatar" src="https://graph.facebook.com/michaelfrankel/picture"><div class="name">Ryan Francis</div><div class="clearfix"/></li>
+       <li> <img class="avatar" src="https://graph.facebook.com/michaelfrankel/picture"><div class="name">Wade Novak</div><div class="clearfix"/></li>
+       <li> <img class="avatar" src="https://graph.facebook.com/michaelfrankel/picture"><div class="name">Leonardo Gaboardi</div><div class="clearfix"/></li>
+     </ul>
+     </div>
+   </div>
+   <div class="column">
+   <div class="card">
+     <h2>Students</h2>
+     <ul>
+       <li> Emilia Pollich</li>
+       <li> Judson Kunde</li>
+       <li> Kelsie Wolff</li>
+       <li> Howell Wilderman</li>
+       <li> Pete Bogisich II</li>
+       <li> Kayley Jakubowski</li>
+       <li> Avis Cole</li>
+       <li> Vance Huels</li>
+       <li> Lance Lowe</li>
+       <li> Maya Wyman</li>
+       <li> Will Herzog Jr.</li>
+       <li> Terrence Reynolds</li>
+       <li> Sincere Kunde</li>
+       <li> Terrell Pouros</li>
+       <li> Abdullah Smith</li>
+       <li> Adolfo Kihn</li>
+       <li> Leanne Powlowski</li>
+       <li> Julian Hintz</li>
+       <li> Francesco Reichert</li>
+       <li> Dixie Bradtke</li>
+     </ul>
+   </div>
+   </div>
+   <div class="column">
+   <div class="card">
+     <h2>Resources</h2>
+     <ul>
+      <li><a href="https://github.com/boothappdev-s15"> Course GitHub page</a></li>
+      <li><a href="http://ask.firstdraft.com/c/boothappdev-spring-2015">Course forum</a></li>
+      <li><a href="http://boothappdev-s15.github.io/syllabus/">Course syllabus</a></li>
+    </ul>
+    </div>
+  </div>
 </div>
 
 </body>
